@@ -17,6 +17,7 @@
 		49B69B4D247B0E8600F0C8F0 /* EventListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B4C247B0E8600F0C8F0 /* EventListModel.swift */; };
 		49B69B50247B0F7500F0C8F0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B4F247B0F7500F0C8F0 /* Event.swift */; };
 		49B69B54247B10CA00F0C8F0 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B53247B10CA00F0C8F0 /* BaseService.swift */; };
+		49B69B56247B163100F0C8F0 /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B55247B163100F0C8F0 /* EventListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		49B69B4C247B0E8600F0C8F0 /* EventListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListModel.swift; sourceTree = "<group>"; };
 		49B69B4F247B0F7500F0C8F0 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		49B69B53247B10CA00F0C8F0 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		49B69B55247B163100F0C8F0 /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				49B69B4C247B0E8600F0C8F0 /* EventListModel.swift */,
+				49B69B55247B163100F0C8F0 /* EventListViewModel.swift */,
 			);
 			path = EventList;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				49B69B33247B0DBC00F0C8F0 /* AppDelegate.swift in Sources */,
 				49B69B4D247B0E8600F0C8F0 /* EventListModel.swift in Sources */,
 				49B69B54247B10CA00F0C8F0 /* BaseService.swift in Sources */,
+				49B69B56247B163100F0C8F0 /* EventListViewModel.swift in Sources */,
 				49B69B50247B0F7500F0C8F0 /* Event.swift in Sources */,
 				49B69B35247B0DBC00F0C8F0 /* SceneDelegate.swift in Sources */,
 			);
