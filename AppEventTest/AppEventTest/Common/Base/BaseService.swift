@@ -21,7 +21,7 @@ class BaseService {
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             
-            let code = (response as! HTTPURLResponse).statusCode
+            let code = (response as? HTTPURLResponse)?.statusCode ?? 0
             
             guard error == nil else {
                 completion(nil, error)
@@ -34,7 +34,7 @@ class BaseService {
             }
             
             completion(data, nil)
-        }
+        }.resume()
         
     }
     

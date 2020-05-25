@@ -18,6 +18,8 @@
 		49B69B50247B0F7500F0C8F0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B4F247B0F7500F0C8F0 /* Event.swift */; };
 		49B69B54247B10CA00F0C8F0 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B53247B10CA00F0C8F0 /* BaseService.swift */; };
 		49B69B56247B163100F0C8F0 /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B55247B163100F0C8F0 /* EventListViewModel.swift */; };
+		49B69B58247B23C400F0C8F0 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B57247B23C400F0C8F0 /* Enums.swift */; };
+		49B69B5A247B24DD00F0C8F0 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B59247B24DD00F0C8F0 /* EventListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		49B69B4F247B0F7500F0C8F0 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		49B69B53247B10CA00F0C8F0 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		49B69B55247B163100F0C8F0 /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
+		49B69B57247B23C400F0C8F0 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		49B69B59247B24DD00F0C8F0 /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +103,9 @@
 		49B69B4B247B0E4600F0C8F0 /* EventList */ = {
 			isa = PBXGroup;
 			children = (
-				49B69B4C247B0E8600F0C8F0 /* EventListModel.swift */,
+				49B69B59247B24DD00F0C8F0 /* EventListViewController.swift */,
 				49B69B55247B163100F0C8F0 /* EventListViewModel.swift */,
+				49B69B4C247B0E8600F0C8F0 /* EventListModel.swift */,
 			);
 			path = EventList;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			children = (
 				49B69B52247B10BB00F0C8F0 /* Base */,
 				49B69B4E247B0F4E00F0C8F0 /* Entities */,
+				49B69B57247B23C400F0C8F0 /* Enums.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -206,8 +212,10 @@
 				49B69B33247B0DBC00F0C8F0 /* AppDelegate.swift in Sources */,
 				49B69B4D247B0E8600F0C8F0 /* EventListModel.swift in Sources */,
 				49B69B54247B10CA00F0C8F0 /* BaseService.swift in Sources */,
+				49B69B5A247B24DD00F0C8F0 /* EventListViewController.swift in Sources */,
 				49B69B56247B163100F0C8F0 /* EventListViewModel.swift in Sources */,
 				49B69B50247B0F7500F0C8F0 /* Event.swift in Sources */,
+				49B69B58247B23C400F0C8F0 /* Enums.swift in Sources */,
 				49B69B35247B0DBC00F0C8F0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

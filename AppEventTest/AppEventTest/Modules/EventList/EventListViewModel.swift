@@ -8,57 +8,40 @@
 
 import Foundation
 
-protocol EventListViewModelDelegate {
-    func loading(_ toogle: Bool)
-    func fail(message: String)
-    func dataLoaded()
-}
-
-protocol EvenView {
-    var description: String { get set }
-    var image: String { get set }
-    var title: String { get set }
-}
-
 class EventListViewModel {
     
     private var model: EventListModel
-    private var events: [Event] = []
+    var events: [Event] = []
+    var errorMessage: String = ""
+    var updateUI: ((_ state: ViewState)->())? {
+        didSet {
+            self.loadData()
+        }
+    }
     
-    var delegate: EventListViewModelDelegate?
+    var state: ViewState = .initial {
+        didSet {
+            updateUI?(state)
+        }
+    }
     
     init(model: EventListModel) {
         self.model = model
     }
     
-    func loadData() {
-        self.delegate?.loading(true)
+    private func loadData() {
+        self.state = .loading
         model.getEventList() { events, error in
             
-            self.delegate?.loading(false)
-            
             guard error == nil else {
-                
-                self.delegate?.fail(message: error!.localizedDescription)
+                self.errorMessage = error!.localizedDescription
+                self.state = .error
                 return
             }
             
             self.events = events
-            self.delegate?.dataLoaded()
+            
+            self.state = events.count == 0 ? .noData : .update
         }
-    }
-    
-    func eventCount() -> Int {
-        return events.count
-    }
-    
-    func fillUI(index: Int, eventView: EvenView) {
-        var ev = eventView
-        
-        let event = events[index]
-        ev.description = event.welcomeDescription
-        ev.image = event.image
-        ev.title = event.title
-
     }
 }
