@@ -20,6 +20,9 @@
 		49B69B56247B163100F0C8F0 /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B55247B163100F0C8F0 /* EventListViewModel.swift */; };
 		49B69B58247B23C400F0C8F0 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B57247B23C400F0C8F0 /* Enums.swift */; };
 		49B69B5A247B24DD00F0C8F0 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B59247B24DD00F0C8F0 /* EventListViewController.swift */; };
+		49B69B5D247B7AB700F0C8F0 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B5C247B7AB700F0C8F0 /* EventDetailViewController.swift */; };
+		49B69B5F247B7D9900F0C8F0 /* EventDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B5E247B7D9900F0C8F0 /* EventDetailViewModel.swift */; };
+		49B69B61247B7DC400F0C8F0 /* EventDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B60247B7DC400F0C8F0 /* EventDetailModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		49B69B55247B163100F0C8F0 /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
 		49B69B57247B23C400F0C8F0 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		49B69B59247B24DD00F0C8F0 /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
+		49B69B5C247B7AB700F0C8F0 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		49B69B5E247B7D9900F0C8F0 /* EventDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewModel.swift; sourceTree = "<group>"; };
+		49B69B60247B7DC400F0C8F0 /* EventDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailModel.swift; sourceTree = "<group>"; };
 		4F467A054C17C4624F704096 /* Pods-AppEventTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppEventTest.debug.xcconfig"; path = "Target Support Files/Pods-AppEventTest/Pods-AppEventTest.debug.xcconfig"; sourceTree = "<group>"; };
 		CE4E46CF4995C23C677EA18F /* Pods-AppEventTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppEventTest.release.xcconfig"; path = "Target Support Files/Pods-AppEventTest/Pods-AppEventTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +114,7 @@
 		49B69B4A247B0E2800F0C8F0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				49B69B5B247B798200F0C8F0 /* EventDetail */,
 				49B69B4B247B0E4600F0C8F0 /* EventList */,
 			);
 			path = Modules;
@@ -147,6 +154,16 @@
 				49B69B53247B10CA00F0C8F0 /* BaseService.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		49B69B5B247B798200F0C8F0 /* EventDetail */ = {
+			isa = PBXGroup;
+			children = (
+				49B69B5C247B7AB700F0C8F0 /* EventDetailViewController.swift */,
+				49B69B5E247B7D9900F0C8F0 /* EventDetailViewModel.swift */,
+				49B69B60247B7DC400F0C8F0 /* EventDetailModel.swift */,
+			);
+			path = EventDetail;
 			sourceTree = "<group>";
 		};
 		D0E9CE1180EBCED7FFFE09E5 /* Frameworks */ = {
@@ -278,6 +295,9 @@
 				49B69B54247B10CA00F0C8F0 /* BaseService.swift in Sources */,
 				49B69B5A247B24DD00F0C8F0 /* EventListViewController.swift in Sources */,
 				49B69B56247B163100F0C8F0 /* EventListViewModel.swift in Sources */,
+				49B69B5F247B7D9900F0C8F0 /* EventDetailViewModel.swift in Sources */,
+				49B69B61247B7DC400F0C8F0 /* EventDetailModel.swift in Sources */,
+				49B69B5D247B7AB700F0C8F0 /* EventDetailViewController.swift in Sources */,
 				49B69B50247B0F7500F0C8F0 /* Event.swift in Sources */,
 				49B69B58247B23C400F0C8F0 /* Enums.swift in Sources */,
 				49B69B35247B0DBC00F0C8F0 /* SceneDelegate.swift in Sources */,

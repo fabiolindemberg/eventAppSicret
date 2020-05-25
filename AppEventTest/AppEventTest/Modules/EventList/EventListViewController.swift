@@ -30,6 +30,7 @@ class EventListViewController: UIViewController {
         viewModel!.updateUI = updateUI
 
         tbEvent.dataSource = self
+        tbEvent.delegate = self
     }
     
     func updateUI(_ state: ViewState) {
@@ -52,9 +53,17 @@ class EventListViewController: UIViewController {
             }
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let controller = segue.destination as? EventDetailViewController {
+            if let eventId = sender as? String {
+                controller.eventId = eventId
+            }
+        }
+    }
 }
 
-extension EventListViewController: UITableViewDataSource {
+extension EventListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel!.events.count
     }
@@ -68,5 +77,10 @@ extension EventListViewController: UITableViewDataSource {
         cell?.detailTextLabel?.text = event.welcomeDescription
         cell?.imageView?.sd_setImage(with: URL(string: event.image), placeholderImage: #imageLiteral(resourceName: "mountain"))
         return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "segueDetail", sender: viewModel!.events[indexPath.row].id)
     }
 }

@@ -25,7 +25,7 @@ class EventListModel: BaseService {
                 let events = try JSONDecoder().decode([Event].self, from: data!)
                 completion(events, nil)
             } catch {
-                completion([], CustomErrors.conversion(message: "Error to try decode event."))
+                completion([], CustomErrors.conversion(message: "Error to try decode event list."))
             }
         }
     }
