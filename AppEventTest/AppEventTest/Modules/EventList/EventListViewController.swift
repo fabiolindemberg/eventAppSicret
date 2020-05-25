@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class EventListViewController: UIViewController {
 
@@ -60,7 +61,12 @@ extension EventListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        cell?.textLabel?.text = viewModel!.events[indexPath.row].title
+        
+        let event = viewModel!.events[indexPath.row]
+        
+        cell?.textLabel?.text = event.title
+        cell?.detailTextLabel?.text = event.welcomeDescription
+        cell?.imageView?.sd_setImage(with: URL(string: event.image), placeholderImage: #imageLiteral(resourceName: "mountain"))
         return cell!
     }
 }

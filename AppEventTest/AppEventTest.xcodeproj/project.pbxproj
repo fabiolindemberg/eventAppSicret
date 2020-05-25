@@ -3,14 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		490060C7CE20A271BE796330 /* Pods_AppEventTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D07279A7F84CC89F49A4AD /* Pods_AppEventTest.framework */; };
 		49B69B33247B0DBC00F0C8F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B32247B0DBC00F0C8F0 /* AppDelegate.swift */; };
 		49B69B35247B0DBC00F0C8F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B34247B0DBC00F0C8F0 /* SceneDelegate.swift */; };
-		49B69B37247B0DBC00F0C8F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B36247B0DBC00F0C8F0 /* ViewController.swift */; };
 		49B69B3A247B0DBC00F0C8F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49B69B38247B0DBC00F0C8F0 /* Main.storyboard */; };
 		49B69B3D247B0DBC00F0C8F0 /* AppEventTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49B69B3B247B0DBC00F0C8F0 /* AppEventTest.xcdatamodeld */; };
 		49B69B3F247B0DBF00F0C8F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B69B3E247B0DBF00F0C8F0 /* Assets.xcassets */; };
@@ -28,7 +27,6 @@
 		49B69B2F247B0DBC00F0C8F0 /* AppEventTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppEventTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B69B32247B0DBC00F0C8F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49B69B34247B0DBC00F0C8F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		49B69B36247B0DBC00F0C8F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		49B69B39247B0DBC00F0C8F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49B69B3C247B0DBC00F0C8F0 /* AppEventTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppEventTest.xcdatamodel; sourceTree = "<group>"; };
 		49B69B3E247B0DBF00F0C8F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 				4F467A054C17C4624F704096 /* Pods-AppEventTest.debug.xcconfig */,
 				CE4E46CF4995C23C677EA18F /* Pods-AppEventTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -90,7 +87,6 @@
 				49B69B51247B10B000F0C8F0 /* Common */,
 				49B69B4A247B0E2800F0C8F0 /* Modules */,
 				49B69B49247B0DF300F0C8F0 /* Application */,
-				49B69B36247B0DBC00F0C8F0 /* ViewController.swift */,
 				49B69B38247B0DBC00F0C8F0 /* Main.storyboard */,
 			);
 			path = AppEventTest;
@@ -277,7 +273,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				49B69B3D247B0DBC00F0C8F0 /* AppEventTest.xcdatamodeld in Sources */,
-				49B69B37247B0DBC00F0C8F0 /* ViewController.swift in Sources */,
 				49B69B33247B0DBC00F0C8F0 /* AppDelegate.swift in Sources */,
 				49B69B4D247B0E8600F0C8F0 /* EventListModel.swift in Sources */,
 				49B69B54247B10CA00F0C8F0 /* BaseService.swift in Sources */,
